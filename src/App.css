@@ -1,0 +1,79 @@
+:root{
+
+ --color1: #A0A603; 
+ --color2: #D9D8D7; 
+ --color3: #F27B35; 
+ --color4: #D93E30; 
+ --color5: #8C1414; 
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--color2);
+}
+.App {
+  background-color: var(--color1);
+  width: 300px;
+  border-radius: 20px;
+}
+
+.main-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-template-columns: 100px 100px;
+  padding: 1rem;
+  gap: 0.5rem;
+  
+ 
+}
+.reactlogo {
+  width: 200px;
+  text-align: center;
+  margin: 1rem;
+}
+.top-h2 {
+  text-align: center;
+  margin: 0.5rem;
+}
+.container{
+  background-color: var(--color3);
+  border-radius: 15px;
+  padding: 0.5rem;
+  
+}
+.container img {
+  max-width: 75px;
+  max-height: 75px;
+}
+.container p {
+  font-size: small;
+  text-align: left;
+  list-style-position: inside;
+  width: 85px;
+  height: 100px;
+}
+
+
+.container:hover{
+  box-shadow: 0 0 8px var(--color5);
+  box-shadow: 0 0 8px var(--color5);
+
+}
+.container:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+  
+}
